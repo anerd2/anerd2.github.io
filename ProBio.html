@@ -25,7 +25,7 @@
           width="200"
           height="200"
         />
-        <p>
+        <p class="output">
           After graduation I plan to get into the fields of software development
           or computer graphics. I currently have not been a part of any
           internships. In an internships place I have a history of working
@@ -40,12 +40,76 @@
         </p>
       </div>
       <div id="previous">
-        <p>CS463 Homework 1: In this assignment I practiced HTML</p>
-        <p>CS463 Homework 2: In this assignment I practiced CSS</p>
-        <p>CS463 Homework 4: In this assignment I practiced Javascript</p>
+        <p class="output">
+          The most recent experience I have is from CS463 assignment 4. During
+          this assignment I learned and practiced using Javascript.
+        </p>
+        <p class="output">
+          Before CS463 assignment 4 I worked on CS463 assignment 2. This
+          assignment had me learn and practice using CSS to manipulate the HTML
+          I wrote during CS463 assignment 1.
+        </p>
+        <p class="output">
+          For CS463 assignment 1 I learned and practiced HTML. This was the base
+          of the assignments that came after.
+        </p>
       </div>
-      <div id="projects"></div>
-      <div id="contact"></div>
+      <div id="projects">
+        <p class="output">
+          The previous projects I have completed are compiled in the git
+          repository below. While all the programs compiled show my progress
+          throughout my education, CS163 program 3 and CS202 program 3 are the
+          best showcases of my education.
+        </p>
+        <a class="git" href="https://github.com/Anteny/School"></a>
+      </div>
+      <div id="contact">
+        <form>
+          <h1 class="start">Contact Form</h1>
+
+          <label class="label-1" for="username">Username:</label>
+          <input type="username" id="username" name="username" />
+
+          <label class="label-1" for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label class="label-1" for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+
+          <fieldset>
+            <legend>Which would you prefer I respond to?</legend>
+
+            <input
+              type="radio"
+              id="contactChoice1"
+              name="contact"
+              value="Phone"
+            />
+            <label class="label-2" for="contactChoice1">Phone</label>
+
+            <input
+              type="radio"
+              id="contactChoice2"
+              name="contact"
+              value="Email"
+            />
+            <label class="label-2" for="contactChoice2">Email</label>
+          </fieldset>
+          <label class="label-3" for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+
+          <label class="label-1" for="description">Description:</label>
+          <input type="text" id="description" name="description" />
+
+          <button type="submit" name="submit" value="Submit">Submit</button>
+          <button type="reset" name="reset" value="Reset">Reset</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
