@@ -89,6 +89,7 @@
 
 .git {
   text-align: center;
+  color: var(--black);
 }
 
 .contact {
